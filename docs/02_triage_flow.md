@@ -79,17 +79,20 @@ For each email:
 
 ## 📂 Folder Logic Chart
 
-| Folder         | Use When...                                                                  |
-| -------------- | ---------------------------------------------------------------------------- |
-| `00_Important` | You must monitor this — critical, escalated, or high-stakes visibility       |
-| `01_Action`    | A task must be performed (excluding replies)                                 |
-| `02_Reply`     | A reply is required or the thread is being tracked for future responses      |
-| `03_Review`    | You must read or analyze the content later (not time-bound)                  |
-| `04_Meetings`  | Email relates to a scheduled call or meeting                                 |
-| `05_Events`    | Email involves an upcoming real-world event, trip, or non-routine occurrence |
-| `99_Reference` | Email includes information or files worth keeping for future use             |
+| Folder         | Use When...                                                                 |
+| -------------- | --------------------------------------------------------------------------- |
+| `00_Important` | The message needs short-term visibility due to urgency or strategic impact  |
+| `01_Action`    | A task must be performed (excluding replies)                                |
+| `02_Reply`     | A reply is required, or you're waiting on someone else                      |
+| `03_Review`    | The content should be read or considered later (not time-sensitive)         |
+| `04_Meetings`  | The message relates to a scheduled meeting, agenda, or invite               |
+| `05_Events`    | The email involves events, travel, or non-routine calendar items            |
+| `90_Reference` | The content is reusable (attachments, templates, credentials, etc.)         |
+| `97_Knowledge` | The content contains reusable insights or informal documentation            |
+| `98_Legacy`    | It’s long-past work of enduring relevance (e.g., past project email chains) |
+| `99_Archive`   | It’s emotionally or historically valuable and worth preserving              |
 
-📌 _If multiple folders could apply, select the one that best reflects the **next expected behavior**._
+📌 _If multiple folders apply, choose the one that reflects the **next required behavior or purpose**. Prioritize action over reference._
 
 ---
 
@@ -100,7 +103,10 @@ For each email:
 - A policy change announcement you’ll read later → `03_Review`
 - A Zoom invite with agenda → `04_Meetings`
 - A hotel booking confirmation → `05_Events`
-- An email with a downloadable slide deck for future reference → `99_Reference`
+- An email with a reusable slide deck or resource file → `90_Reference`
+- A thoughtful explanation about how to handle a complex process → `97_Knowledge`
+- A completed project’s final wrap-up thread or client sign-off → `98_Legacy`
+- A farewell message from a longtime colleague → `99_Archive`
 - An urgent operations update marked high priority → `00_Important`
 
 ---
