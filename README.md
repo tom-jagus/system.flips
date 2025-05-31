@@ -34,16 +34,16 @@ system.flips/
 
 ## 📘 Documentation Index
 
-| File                              | Description                                 |
-| --------------------------------- | ------------------------------------------- |
-| `docs/00_overview.md`             | Introduction and system scope               |
-| `docs/01_folder_structure.md`     | Recommended folder naming and philosophy    |
-| `docs/02_triage_flow.md`          | Triage logic and folder usage rules         |
-| `docs/03_setup_guide.md`          | Setup instructions for Outlook and Gmail    |
-| `docs/04_native_automation.md`    | Built-in notifications and review nudges    |
-| `docs/05_expansion_notes.md`      | Future improvements and possible extensions |
-| `project/milestones.md`           | Project milestones and development tracking |
-| `project/project_idea_summary.md` | Original ideation and project origin        |
+| File                              | Description                                    |
+| --------------------------------- | ---------------------------------------------- |
+| `docs/01_folder_structure.md`     | Recommended folder naming and philosophy       |
+| `docs/02_triage_flow.md`          | Triage logic and folder usage rules            |
+| `docs/03_cleanup_rules.md`        | Folder-specific cleanup practices and cadences |
+| `docs/04_setup_guide.md`          | Setup instructions for Outlook and Gmail       |
+| `docs/05_native_automation.md`    | Built-in notifications and review nudges       |
+| `docs/06_expansion_notes.md`      | Future improvements and possible extensions    |
+| `project/milestones.md`           | Project milestones and development tracking    |
+| `project/project_idea_summary.md` | Original ideation and project origin           |
 
 ---
 
