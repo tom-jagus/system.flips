@@ -1,92 +1,53 @@
-# 📍 Project Milestones – F.L.I.P.S. (Fleeting Logic for Inbox Processing System)
+# Project Milestones - FLIPS
 
-This document outlines major milestones in the development of the FLIPS system.  
-Each milestone includes detailed tasks with progress tracking, and a timeline table for oversight.
+This document tracks implementation progress for the current FLIPS documentation model.
 
----
+## Milestone overview
 
-## 📊 Milestone Overview Table
+| # | Milestone | Status | Started | Completed |
+| --- | --- | --- | --- | --- |
+| 1 | Repository foundation | Completed | 2025-05-25 | 2025-05-25 |
+| 2 | Canonical documentation rewrite | Completed | 2026-03-12 | 2026-03-13 |
+| 3 | Provider setup guides | Pending | - | - |
+| 4 | Automation script hardening | Pending | - | - |
+| 5 | Operational validation and release prep | Pending | - | - |
 
-| #   | Milestone Name                                  | ETA Start  | Work Started | Work Completed |
-| --- | ----------------------------------------------- | ---------- | ------------ | -------------- |
-| 1   | Initialize the project repository and structure | 2025-05-25 | 2025-05-25   | 2025-05-25     |
-| 2   | Define universal folder names                   | 2025-05-25 | 2025-05-25   | ☐              |
-| 3   | Document triage flow and folder usage           | 2025-05-30 | ☐            | ☐              |
-| 4   | Write universal system setup guide              | 2025-06-06 | ☐            | ☐              |
-| 5   | Define and test review notifications            | 2025-06-13 | ☐            | ☐              |
-| 6   | Review for improvement and expansion            | 2025-06-20 | ☐            | ☐              |
-| 7   | Finalize v1.0 for public/internal release       | 2025-06-27 | ☐            | ☐              |
+## Milestone 1 - Repository foundation (Completed)
 
----
+- [x] Initialize repository structure.
+- [x] Add base project files (`README.md`, `LICENSE.md`, `.gitignore`, `CHANGELOG.md`).
+- [x] Add initial project planning docs in `project/`.
 
-## ✅ Milestone 1: Initialize the project repository and structure
+## Milestone 2 - Canonical documentation rewrite (Completed)
 
-- [x] Define repository naming and category convention (`system.flips`)
-- [x] Design and agree on folder/file structure
-- [x] Create GitHub repository
-- [x] Add `README.md`
-- [x] Add `LICENSE.md` (CC BY 4.0 with naming clause)
-- [x] Add `.gitignore` suited for markdown documentation
-- [x] Add `CHANGELOG.md`
-- [x] Create `docs/` and `project/` folders
-- [x] Write `project_idea_summary.md` based on ideation
-- [x] Write this `milestones.md` file
+- [x] Add high-level system intro in `docs/00_system_overview.md`.
+- [x] Rewrite folder architecture in `docs/01_folder_structure.md`.
+- [x] Add sender groups and labels in `docs/02_contact_groups_and_labels.md`.
+- [x] Rewrite triage flow and SLA guidance in `docs/03_triage_flow.md`.
+- [x] Rewrite cleanup model in `docs/04_cleanup_rules.md`.
+- [x] Add automation precedence and filter logic in `docs/05_automation_filters.md`.
+- [x] Add setup scaffold in `setup/README.md`.
+- [x] Add Sieve reference scaffold in `filters/sieve/README.md` and `filters/sieve/proton_base.sieve`.
+- [x] Align top-level `README.md` with canonical docs.
+- [x] Align agent guidance in `AGENTS.md`.
 
----
+## Milestone 3 - Provider setup guides (Pending)
 
-## ⏳ Milestone 2: Define universal folder names
+- [ ] Create `setup/proton.md` with step-by-step mapping to canonical rules.
+- [ ] Create `setup/gmail.md` with labels, filters, and ordering setup.
+- [ ] Create `setup/outlook.md` with categories, rules, and folder ordering setup.
+- [ ] Add verification checklists to each setup guide.
 
-- [ ] Document folder naming philosophy (e.g., numeric prefixing, intention)
-- [ ] List core shared folders for work/personal use
-- [ ] Document optional personal-use folders
-- [ ] Specify excluded folder types (e.g., "@To Process", "Archive")
-- [ ] Add all to `docs/01_folder_structure.md` with rationale and edge cases
+## Milestone 4 - Automation script hardening (Pending)
 
----
+- [ ] Validate `filters/sieve/proton_base.sieve` against real mailbox behavior.
+- [ ] Add tested Sieve variants if needed (strict mode, minimal mode).
+- [ ] Document safe phrase management and periodic rotation guidance.
+- [ ] Add troubleshooting notes for precedence conflicts.
 
-## ⏳ Milestone 3: Document triage flow and folder usage rules
+## Milestone 5 - Operational validation and release prep (Pending)
 
-- [ ] Describe Inbox-as-temporary philosophy
-- [ ] Detail the triage process step-by-step
-- [ ] Explain usage logic for each folder (behavior-driven)
-- [ ] Provide practical examples (e.g., move to `02_Reply` when…)
-- [ ] Write into `docs/02_triage_flow.md`
-- [ ] Add optional diagram placeholder in `assets/` (future)
-
----
-
-## ⏳ Milestone 4: Write universal system setup guide
-
-- [ ] Walkthrough for Outlook setup
-- [ ] Walkthrough for Gmail setup
-- [ ] Folder creation and navigation configuration
-- [ ] Sample rules or filters
-- [ ] Suggestions for flags/views/pin behavior
-- [ ] Document in `docs/03_setup_guide.md`
-
----
-
-## ⏳ Milestone 5: Define and test review notifications
-
-- [ ] Identify built-in review tools (e.g., Outlook flags, Gmail nudges)
-- [ ] Define sample rule configurations for reminders
-- [ ] Suggest review frequency guidelines
-- [ ] Add documentation to `docs/04_native_automation.md`
-
----
-
-## ⏳ Milestone 6: Review for improvement and expansion
-
-- [ ] Re-evaluate structure and user experience after use/testing
-- [ ] Capture ideas for future improvement (e.g., automation, integrations)
-- [ ] Document expansion potential in `docs/05_expansion_notes.md`
-
----
-
-## ⏳ Milestone 7: Finalize v1.0 for public/internal release
-
-- [ ] Polish and proof all documentation
-- [ ] Add optional navigation/index if needed
-- [ ] Finalize `README.md` as project homepage
-- [ ] Add initial release entry to `CHANGELOG.md`
-- [ ] Tag release `v1.0` on GitHub
+- [ ] Run a full consistency pass across `docs/`, `setup/`, and `filters/sieve/`.
+- [ ] Resolve wording drift between policy docs and setup guides.
+- [ ] Add release notes entry in `CHANGELOG.md`.
+- [ ] Tag release when documentation and setup guides are stable.
