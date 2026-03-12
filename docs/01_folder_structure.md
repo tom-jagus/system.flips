@@ -1,107 +1,69 @@
-# 📁 Folder Structure – F.L.I.P.S.
+# Folder Structure
 
-This document defines the universal folder naming conventions and philosophy used in the F.L.I.P.S. system.  
-The folder structure is designed to optimize clarity, triage speed, and long-term inbox hygiene across both personal and professional email accounts.
+This document defines the canonical FLIPS folder layout.
 
----
+The structure is designed to separate:
 
-## 🎯 Naming Philosophy
+- immediate attention (`Inbox`)
+- deferred triage (`00 Awaiting triage`)
+- temporary working mail (`01 Reply later`, `02 Aside pile`)
+- long-term records (`03 Paper trail`)
+- automated bulk channels (`04 Events`, `05 Notifications`, `06 Newsletters`)
 
-Folders are **purpose-built** and use **numeric prefixes** to:
+## Top-level folders
 
-- Enforce **visual order** and **processing priority** across clients
-- Enable quick access with keyboard shortcuts or mobile views
-- Reflect **behavioral intent**, not topic or sender
+Use this order in every mailbox:
 
-### ❓ Why this way?
+| Folder | Purpose | Retention model |
+| --- | --- | --- |
+| `Inbox` | Immediate-attention email and triage exceptions | short-lived |
+| `00 Awaiting triage` | Default queue for non-urgent messages | short-lived |
+| `01 Reply later` | Messages that need a thoughtful reply, not now | temporary |
+| `02 Aside pile` | Temporary workspace for active email context | temporary |
+| `03 Paper trail` | Long-term records and evidence | long-term |
+| `04 Events` | Event messages routed by event sender group | temporary |
+| `05 Notifications` | Automated/system notifications routed by sender group | temporary |
+| `06 Newsletters` | Newsletter content routed by sender group | temporary |
 
-- You shouldn't have to think _where_ an email goes — the structure answers that
-- Behavioral folders reduce overthinking and categorization fatigue
-- Numeric prefixes make folders appear in the same order across platforms
-- Flat structure prevents hidden decisions — every folder is visible and accountable
+## `02 Aside pile` subfolders
 
----
+| Subfolder | Purpose | Typical examples |
+| --- | --- | --- |
+| `01 discussions` | Ongoing back-and-forth threads | waiting replies, active conversations |
+| `02 action context` | Supporting context for active atomic todos | details needed to complete and then reply |
+| `99 attachments to keep` | Temporary attachment holding area | files not yet moved to proper storage |
 
-## 📌 Core Folder Set (Work & Personal)
+## `03 Paper trail` subfolders
 
-These folders form the baseline for triage and active processing:
+| Subfolder | Purpose | Typical examples |
+| --- | --- | --- |
+| `01 personal` | Personal-value records worth keeping | meaningful personal correspondence |
+| `02 financial` | Money movement evidence | invoices, receipts, refunds |
+| `03 commitments` | Promises, acknowledgements, accountability | written commitments and approvals |
+| `04 agreements` | Terms and formal arrangements | accepted conditions, service terms |
+| `05 purchases` | Order lifecycle history | confirmations, shipping, returns |
+| `06 travel` | Travel records | bookings, tickets, itineraries |
+| `99 official` | Formal institutional records | tax, legal, compliance, identity notices |
 
-| Folder Name    | Purpose                                                              | Example                                                   |
-| -------------- | -------------------------------------------------------------------- | --------------------------------------------------------- |
-| `00_Important` | High-priority messages requiring awareness or tracking               | Critical announcements, escalation notices                |
-| `01_Action`    | Emails requiring a non-reply action or follow-up task                | Request to update a report, task handoff, approval needed |
-| `02_Reply`     | Messages that require a written or verbal response                   | Customer question, stakeholder feedback, vendor inquiry   |
-| `03_Review`    | To be reviewed when time allows (reading, decisions, quiet catch-up) | Article to read, product doc, business proposal           |
-| `04_Meetings`  | Invites, agendas, minutes, and coordination for scheduled meetings   | Weekly sync invite, agenda doc, Zoom link                 |
-| `05_Events`    | Event-related materials (webinars, trainings, conferences)           | Conference registration, session info, travel details     |
+## Naming guidance
 
----
+- Keep managed folders numbered from `00` upward so ordering is stable across clients.
+- Use spaces in names for readability.
+- Use plural top-level names where natural.
+- Use singular labels (defined in `docs/02_contact_groups_and_labels.md`).
 
-## 🏡 Optional Personal-Use Folders
+The exact capitalization style is flexible. Keep naming internally consistent.
 
-These folders are for users managing mixed (personal + work) accounts or heavy personal email volume.
+## Design rules
 
-| Folder Name   | Purpose                                                            | Example                                                  |
-| ------------- | ------------------------------------------------------------------ | -------------------------------------------------------- |
-| `06_Shopping` | Order confirmations, delivery updates, promotional purchases       | Amazon receipt, shipping notification                    |
-| `07_Bills`    | Payment reminders, receipts, utility invoices                      | Electricity bill, phone plan invoice                     |
-| `08_Finance`  | Banking, investments, credit updates                               | Monthly statement, tax document, investment update       |
-| `09_Services` | Subscriptions, insurance, repairs, personal services communication | Netflix renewal, car insurance docs, dentist appointment |
+- Folder names should describe why email is kept.
+- Avoid vague storage buckets.
+- Keep only folders with repeated, real behavior.
+- If a folder cannot be explained in one sentence, simplify it.
 
-Only create these if they match your volume and lifestyle — otherwise, keep it lean.
+## Anti-patterns
 
----
-
-## 🧱 High-Index Preservation Block
-
-This block is for **non-triaged**, **value-retaining** messages that are explicitly preserved.  
-They are not part of the active flow and should rarely be reviewed unless intentionally revisited.
-
-| Folder Name    | Purpose                                                                      | Example                                                         |
-| -------------- | ---------------------------------------------------------------------------- | --------------------------------------------------------------- |
-| `97_Knowledge` | Emails with valuable content or potential for reuse and insight mining       | Long advice threads, workflows, process explanations            |
-| `98_Legacy`    | Historical work/project correspondence of long-term relevance                | Old job correspondence, completed projects, migration histories |
-| `99_Archive`   | Permanent storage of personal, emotional, or historically significant emails | Family messages, farewell emails, memories from early years     |
-
-These folders allow clarity **without hiding anything** — they’re visible, named, and justified.
-
----
-
-## 🚫 Prohibited Folder Types
-
-To preserve clarity and prevent decision fatigue, avoid:
-
-- `@To Process` – Inbox **is** the triage zone
-- `Archive` (default client archive) – Use `99_Archive` with intention
-- People-based folders (e.g., “John”, “HR”) – Redundant and messy
-- Topic folders (e.g., “Projects”, “Finance”) – Already represented behaviorally
-
-No custom folders should be added unless explicitly defined here.
-
----
-
-## 🗃️ Folder Creation Tips
-
-- Create folders in **desktop email client** for better control and sort order
-- Use color categories/tags (if supported) for speed without complexity
-- Stick to flat hierarchy — **no nesting allowed** for transparency and clarity
-
----
-
-## 🔁 Triage Decision Tips
-
-If a message fits multiple folders:
-
-- Ask: _What is the next action required?_
-  - Needs a reply? → `02_Reply`
-  - Needs to be done? → `01_Action`
-  - Might be useful someday? → `97_Knowledge` or `90_Reference`
-- When in doubt, favor **action** over **reference**
-- If no action or value, delete it — not everything deserves a home
-
----
-
-## 🧭 Summary
-
-F.L.I.P.S. defines a clean, stable, and purpose-built folder set to guide both action and preservation.  
-With numeric prefixes, a closed folder system, and behavior-first logic, it enables maintainable inbox hygiene across platforms, use cases, and roles — whether for daily work or lifelong correspondence.
+- Leaving email in `Inbox` or `00 Awaiting triage` as storage.
+- Creating broad buckets like `Misc`, `Archive`, or `Review later`.
+- Building topic-heavy folder trees that duplicate search.
+- Treating `02 Aside pile` as a long-term archive.
