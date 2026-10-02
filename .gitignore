@@ -1,0 +1,27 @@
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+desktop.ini
+
+# Editor & IDE folders
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary or backup files
+*.tmp
+*.bak
+*.~*
+*~
+
+# Hidden log or metadata files
+*.log
+
+# Auto-generated folders (if any tools/scripts used in future)
+node_modules/
+dist/
+build/
+.cache/
